@@ -1,0 +1,6 @@
+  <div class="branding"><a href="#">angularJS</a></div>
+  <ul>
+    <li ng-if="!currentUser"><a href="#/login">Login</a></li>
+    <li ng-if="currentUser" ng-controller="RegisterController"><a ng-href="#/login" ng-click="logout()"> Logout</a></li>
+    <li><a href="#/register">Register</a></li>
+  </ul>
